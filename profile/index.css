@@ -1,0 +1,18 @@
+@charset "utf-8";
+body{
+    background-color: rgb(221, 219, 219);
+}
+
+
+#name{
+    color: rgb(37, 37, 255);
+}
+.syu{
+    background-color: orange;
+}
+span{
+    border: 1px solid black;
+}
+.syu{
+    padding: 10px;
+}
