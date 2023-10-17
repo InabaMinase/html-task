@@ -1,0 +1,35 @@
+@charset "utf-8" ;
+
+
+fieldset{
+    margin: 20px ;
+}
+.i{
+    margin: 0px 0px 0px 200px;
+}
+
+.ap{
+    margin: 0px 0px 0px 200px;
+}
+.ni{
+    margin: 0px 0px 0px 184px
+}
+#m{
+
+    margin: 0px 0px 0px 103px
+}
+.san{
+    margin: 0px 0px 0px 151px;
+}
+#i{
+    margin: 0px 0px 0px 150px;
+}
+#w{
+    margin: 0px 0px 0px 20px;
+}
+#ri{
+    font-size: 0.7rem;
+}
+.nin{
+    margin: 0px 0px 0px 183px
+}
