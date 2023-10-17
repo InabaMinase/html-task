@@ -2,7 +2,7 @@
 
 
 fieldset{
-    margin: 20px ;
+    margin: 20px 0px ;
 }
 .i{
     margin: 0px 0px 0px 200px;
@@ -24,9 +24,7 @@ fieldset{
 #i{
     margin: 0px 0px 0px 150px;
 }
-#w{
-    margin: 0px 0px 0px 20px;
-}
+
 #ri{
     font-size: 0.7rem;
 }
