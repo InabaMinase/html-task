@@ -1,0 +1,47 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(ffffff);
+}
+td,th{
+    border: solid 1px black;
+}
+th{
+    background-color: rgb(94, 94, 94);
+}
+.i,.hi{
+    font-size: 11px;
+}
+th{
+    color:white ;
+}
+.hi{
+    color: white;
+}
+.hi{
+    border-radius: 4px;
+}
+.hi{
+    background-color: red;
+}
+
+td{
+background-color: rgb(222, 222, 222);
+}
+th, td{
+    padding: 30px;
+}
+.ju{
+    background-color: gray;
+}
+th{
+    text-align: left;
+}
+th{
+    vertical-align: top;
+}
+table{
+    margin: 5px 0px;
+}
+button{
+    margin: 10px 0px;
+}
