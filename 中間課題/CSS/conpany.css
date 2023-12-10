@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+.size1 {
+    font-size: 115%;
+    font-weight: bold;
+}
+
+.size2,
+.size3 {
+    font-size: 110%;
+}
+
+.size1, .size2, .size3,
+p {
+    margin: 0 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: blueviolet;
+
+}
+
+footer a:hover {
+    background-color: grey;
+    color: white;
+}
+
+
+
+footer {
+    height: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: blueviolet;
+
+}
+
+footer a:hover{
+    background-color: grey;
+    color: white;
+}
+
+.haikei {
+    width: auto ;
+    height: auto;
+    background-image: url("/気になる企業/Conpany-IMG/24594086.jpg   ");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.toumei {
+    background-color: rgba(229, 227, 227, 0.565);
+}
+
+
+.a, .list_test {
+    line-height: 180px;
+    color: rgb(72, 65, 65);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.a{
+    background-color: white;
+}
+
+.a:hover{
+    background-color: violet;
+    color: white;
+}
+
+
+.haikei2 {
+    background-image: url("../ITの歴史/history-img/java_original_wordmark_logo_icon_146459.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+
+}
+
+.toumei2 {
+    background-color: rgba(197, 195, 195, 0.384);
+}
+
+.haikei3 {
+    background-image: url("../ITの歴史/history-img/python_18894.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+
+}
+
+.toumei3 {
+    background-color: rgba(255, 255, 255, 0.562);
+}

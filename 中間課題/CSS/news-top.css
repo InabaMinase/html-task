@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.haikei {
+    width: auto ;
+    height: auto;
+    background-image: url(../ニュース/news-img/27449179_m.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.toumei {
+    background-color: rgba(229, 227, 227, 0.565);
+}
+
+.a, .list_test {
+    line-height: 180px;
+    color: rgb(72, 65, 65);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.a{
+    background-color: white;
+}
+
+.a:hover{
+    background-color: violet;
+    color: white;
+}
+

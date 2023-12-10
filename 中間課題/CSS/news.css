@@ -1,0 +1,35 @@
+@charset "UTF-8";
+footer a {
+    text-decoration: none;
+    color: blueviolet;
+
+}
+
+footer a:hover{
+    background-color: grey;
+    color: white;
+}
+
+img {
+    width: 618;
+    height: 350px;
+    display: block;
+}
+
+body{
+    background-image: url(/ニュース/news-img/27449179_m.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+p, h1 ,h2, h3{
+    font-weight: bold;
+    color: white;
+    font-size: 105%;
+}
+
+footer p {
+    color: black;
+    font-size: 90%;
+}
