@@ -50,6 +50,8 @@ footer a:hover{
     background-position: center;
     background-size: cover;
 
+
+
 }
 
 .toumei {
@@ -74,26 +76,3 @@ footer a:hover{
 }
 
 
-.haikei2 {
-    background-image: url("../ITの歴史/history-img/java_original_wordmark_logo_icon_146459.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: repeat;
-
-}
-
-.toumei2 {
-    background-color: rgba(197, 195, 195, 0.384);
-}
-
-.haikei3 {
-    background-image: url("../ITの歴史/history-img/python_18894.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: repeat;
-
-}
-
-.toumei3 {
-    background-color: rgba(255, 255, 255, 0.562);
-}
