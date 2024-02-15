@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>はじめてのホームページ</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: lightyellow;
+        }
+
+        .main-contents,
+        .left-navi,
+        .right-navi {
+            height: 400px;
+
+        }
+
+        .main-contents {
+            float: left;
+            width: 70%;
+            margin-left: 70px;
+            text-align: center;
+
+        }
+
+        .left-navi {
+            background-color: aquamarine;
+            width: 19%;
+            float: right;
+            border: solid 2px;
+            height: 200px;
+            text-align: center;
+        
+        }
+
+        .left-navi a {
+            font-size: 20px;
+        }
+
+        .left-navi li {
+            margin: 0 30px;
+        }
+        .left-navi h1{
+            margin: auto;
+        }
+
+        .right-navi {
+            float: right;
+            width: 20%;
+            height: 100px;
+            text-align: center;
+        }
+
+        .right-navi h1{
+            margin: auto;
+        }
+        .right-navi li {
+            font-size: 18px;
+            margin: 0 5px;
+        }
+
+        .right-navi li a:hover {
+            color: white;
+            background-color: rgb(89, 173, 5);
+
+        }
+
+        .main {
+            width: 80%;
+            float: right;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            width: 300px;
+            height: 200px;
+            margin-left: 40px;
+        }
+
+        .yoko {
+            display: flex;
+        }
+
+        .sidebar {
+            position: fixed;
+            border: solid 2px;
+
+        }
+
+        .osusume {
+            background-color: aliceblue;
+        }
+
+        #kappa,
+        #sushiro,
+        #hama,
+        #kura {
+            background-color: white;
+            font-family: "Yuji Syuku", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        #top-tag {
+            justify-content: center;
+        
+        }
+    </style>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <p>寿司</p>
+        </div>
+        <div class="navi">
+            <a href="index.html">ホーム</a>
+            <a href="osusume.html">おすすめ</a>
+
+            <a href="3karamu.html">店舗情報</a>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="main-contents">
+            <div class="osusume">
+                <h1>店舗情報</h1>
+                <p>盛岡市内の店舗情報</p>
+            </div>
+
+            <main>
+
+                <section id="kappa">
+                    <h2>かっぱ寿司</h2>
+
+                    <h3 id="minami">盛岡南店</h3>
+                    <div class="yoko">
+                        <img src="img/かっぱ寿司　盛岡南.jpg">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98207.55447498588!2d141.01371066249996!3d39.71749560000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f859dad405ca88b%3A0x5a77a9798b2265a4!2z44GL44Gj44Gx5a-_5Y-4IOebm-WyoeWNl-W6lw!5e0!3m2!1sja!2sjp!4v1707448715105!5m2!1sja!2sjp"
+                            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+
+                    <h3 id="kitayama">盛岡北山店</h3>
+                    <div class="yoko">
+                        <img src="img/かっぱ寿司　北山.png">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98207.55447498588!2d141.01371066249996!3d39.71749560000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8577f74e677c35%3A0xac0b66731992c534!2z44GL44Gj44Gx5a-_5Y-4IOebm-WyoeWMl-WxseW6lw!5e0!3m2!1sja!2sjp!4v1707449224525!5m2!1sja!2sjp"
+                            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+
+                </section>
+
+                <section id="sushiro">
+                    <h2>スシロー</h2>
+                    <h3 id="takamatsu">盛岡高松店</h3>
+                    <div class="yoko">
+                        <img src="img/スシロー.jpg">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.6634578575463!2d141.12700457466525!3d39.72474537155922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8576600079842d%3A0x87fcdea466bb083f!2z44K544K344Ot44O8IOebm-WyoemrmOadvuW6lw!5e0!3m2!1sja!2sjp!4v1707450475666!5m2!1sja!2sjp"
+                            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+
+                <section id="hama">
+                    <h2>はま寿司</h2>
+                    <h3 id="ueda">盛岡上田店</h3>
+                    <div class="yoko">
+                        <img src="img/スクリーンショット 2024-02-15 113157.png">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98201.80119878666!2d140.9916220433594!3d39.72153589999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8576677b5842bb%3A0x2afcfa60270beb76!2z44Gv44G-5a-_5Y-4IOebm-WyoeS4iueUsOW6lw!5e0!3m2!1sja!2sjp!4v1707964333329!5m2!1sja!2sjp"
+                            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <h3 id="yanagi">三本柳店</h3>
+                    <div class="yoko">
+                        <img src="img/スクリーンショット 2024-02-15 113708.png">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98286.46937514635!2d141.0781481390625!3d39.66204210000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f859d1f8d870b29%3A0xfeabe5cc14c6b6f7!2z44Gv44G-5a-_5Y-4IOebm-WyoeS4ieacrOafs-W6lw!5e0!3m2!1sja!2sjp!4v1707964703202!5m2!1sja!2sjp"
+                            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+
+                </section>
+
+                <section id="kura">
+                    <h2>くら寿司</h2>
+                    <h3 id="kura minami">盛岡南店</h3>
+                    <div class="yoko">
+                        <img src="img/kura minami.png">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!3m2!1sja!2sjp!4v1707964810940!5m2!1sja!2sjp!6m8!1m7!1suOy0B-R5bq1ozDFknXModg!2m2!1d39.67728545536902!2d141.1350866890337!3f254.3862323418183!4f1.531711386394278!5f0.7820865974627469"
+                            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <h3 id="kura takamatsu">盛岡高松店</h3>
+                    <div class="yoko">
+                        <img src="img/kura takamatsu.png">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98264.96860886796!2d141.05220193906248!3d39.6771571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f859d42990e8d67%3A0x64af031d569644bd!2z44GP44KJ5a-_5Y-4IOebm-WyoeWNl-W6lw!5e0!3m2!1sja!2sjp!4v1707964983484!5m2!1sja!2sjp"
+                            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </section>
+
+
+            </main>
+
+        </div>
+
+        <div class="right-navi">
+            <aside class="sidebar">
+                <h1>店舗</h1>
+                <a href="#top" id="top-tag">TOP</a>
+                <ul>
+                    <li><a href="#kappa">かっぱ寿司</a></li>
+                    <ul>
+                        <li><a href="#minami">盛岡南店</a></li>
+                        <li><a href="#kitayama">盛岡北山店</a></li>
+                    </ul>
+                    <li><a href="#sushiro">スシロー</a></li>
+                    <ul>
+                        <li><a href="#takamatsu">盛岡高松店</a></li>
+                    </ul>
+                    <li><a href="#hama">はま寿司</a></li>
+                    <ul>
+                        <li><a href="#ueda">盛岡上田店</a></li>
+                        <li><a href="#yanagi">三本柳店</a></li>
+                    </ul>
+                    <li><a href="#kura">くら寿司</a></li>
+                    <ul>
+                        <li><a href="#kura minami">盛岡南店</a></li>
+                        <li><a href="#kura takamatsu">盛岡高松店</a></li>
+                    </ul>
+                </ul>
+            </aside>
+        </div>
+
+    </div>
+    <div class="left-navi">
+
+        <h1>本社</h1>
+        <ul>
+            <li><a href="https://www.kappasushi.jp/" target="_blank">かっぱ寿司</a></li>
+            <li><a href="https://www.akindo-sushiro.co.jp/" target="_blank">スシロー</a></li>
+            <li><a href="https://www.hama-sushi.co.jp/" target="_blank">はま寿司</a></li>
+            <li><a href="https://www.kurasushi.co.jp/" target="_blank">くら寿司</a></li>
+        </ul>
+
+    </div>
+
+    <footer></footer>
+
+
+</body>
+
+</html>

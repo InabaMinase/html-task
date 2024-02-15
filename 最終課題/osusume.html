@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おすすめ</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+
+    <style>
+        img {
+            width: 100%;
+            height: 100%;
+            width: 400px;
+            height: 300px;
+        }
+
+
+        main {
+            background-color: aquamarine;
+            width: 70%;
+            padding: 0.5rem;
+        }
+
+        aside {
+
+            width: 20%;
+            padding: 0.1rem;
+            margin-left: 50px;
+            background-color: burlywood;
+        }
+
+        aside a {
+            color: rgb(0, 0, 0);
+        }
+
+        aside li {
+            list-style: none;
+        }
+
+        aside li a:hover{
+            color: white;
+            background-color: rgb(89, 173, 5);
+            display: inline;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        .osusume {
+            margin-left: 30px;
+            margin-bottom: 50px;
+        }
+
+        .sidebar {
+            position: fixed;
+        }
+
+        .setumei {
+            text-align: left;
+        }
+
+        .right-navi h1{
+            margin-left: 40px;
+
+        }
+
+        aside{
+            border: solid 2px;
+        }
+
+        p{
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <p>寿司</p>
+        </div>
+        <div class="navi">
+            <a href="index.html">ホーム</a>
+            <a href="osusume.html">おすすめ</a>
+            <a href="3karamu.html">店舗情報</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <div class="osusume">
+                <h1>おすすめ</h1>
+                <p>僕のおすすめの寿司を紹介します。</p>
+            </div>
+
+            <section id="5位">
+                <h2>5位</h2>
+                <h1>甲いか</h1>
+                <img src="img/こういか.jpg">
+                <p>
+                    程よいかたさがちょうどいい。
+                    値段もたいていの寿司屋で低価格。
+                </p>
+
+            </section>
+
+            <section id="4位">
+                <h2>4位</h2>
+                <h1>マグロ</h1>
+                <img src="img/鮪.jpg">
+                <P>寿司屋といったらマグロ。王道<br>
+                    寿司屋で出てくるマグロはたいていキハダマグロ
+                </P>
+
+            </section>
+
+            <section id="3位">
+                <h2>3位</h2>
+                <h1>サーモン</h1>
+                <img src="img/サーモン.jpg">
+                <p>
+                    よく食べる。この一言で十分。
+                </p>
+            </section>
+
+            <section id="2位">
+                <h2>2位</h2>
+                <h1>とろサーモン</h1>
+                <img src="img/とろサーモン.jpg">
+                <p>脂が多くおいしい。値段も店によっては高くない。</p>
+            </section>
+
+            <section id="1位">
+                <h2>1位</h2>
+                <h1>真鯛</h1>
+                <img src="img/真鯛.jpg">
+                <p>すごくうまい。少し高いのが難点。ただ、高いなりにおいしい。</p>
+            </section>
+        </main>
+
+        <div class="right-navi">
+            <aside class="sidebar">
+                <h1>順位</h1>
+                <ul>
+                    <li><a href="#5位">5位</a></li>
+                    <li><a href="#4位"> 4位</a></li>
+                    <li><a href="#3位">3位</a></li>
+                    <li><a href="#2位">2位</a></li>
+                    <li><a href="#1位">1位</a></li>
+                </ul>
+            </aside>
+        </div>
+
+    </div>
+    </div>
+
+
+</body>
+
+</html>

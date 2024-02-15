@@ -1,16 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sushi</title>
+    <title>シンプルなHTMLスライダー</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+    <style>
+        /* ここにCSSを記述 */
+        .slider-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            margin-top: 30px;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+
+        /* aaaa*/
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.7);
+            border: none;
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        main {
+
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .rinku img {
+            width: 100%;
+            height: 100%;
+            width: 500px;
+            height: 350px;
+            margin: auto;
+        }
+
+
+        .rinku img:hover{
+            opacity: 0.5;
+        }
+        .rinku{
+            margin: 10px;
+        }
+
+        .flex{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+
+        footer a{
+        justify-content: center;
+        }
+
+        footer{
+            margin: 10rem 0 20px 0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="index.css">
+
 </head>
+
 <body>
     <header>
-        <div class="container">
-        <h1 class="title">お寿司</h1>
-    </div>
+        <div class="title">
+            <p>寿司</p>
+        </div>
+        <div class="navi">
+            <a href="#">ホーム</a>
+            <a href="osusume.html">おすすめ</a>
+
+            <a href="3karamu.html">店舗情報</a>
+        </div>
     </header>
-    
+
+
+
+    <div class="slider-container">
+        <div class="slide">
+            <img src="img/AdobeStock_107536772_Preview (大).jpeg" alt="画像1">
+        </div>
+        <div class="slide">
+            <img src="img/AdobeStock_117444647_Preview (大).jpeg" alt="画像2">
+        </div>
+        <div class="slide">
+            <img src="img/AdobeStock_328117347_Preview (大).jpeg" alt="画像3">
+        </div>
+        <button class="arrow prev" onclick="switchSlide(-1)">＜</button>
+        <button class="arrow next" onclick="switchSlide(1)">＞</button>
+
+
+    </div>
+
+    <script>
+        /* ここにJavaScriptを記述 */
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+
+        function switchSlide() {
+            slides[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].classList.add('active');
+        }
+
+        setInterval(switchSlide, 3000);
+    </script>
+    <script>
+        function switchSlide(direction) {
+            slides[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + direction + slides.length) % slides.length;
+            slides[currentIndex].classList.add('active');
+        }
+    </script>
+
+
+
+    <div class="container">
+        <main>
+            <p style="font-size: 25px;">製作者の個人的なおすすめの寿司や店舗の情報を掲載しています。</p>
+
+
+            <div class="flex">
+                <div class="rinku">
+                    <h1>寿司</h1>
+                    <a href="osusume.html"><img src="img/とろサーモン.jpg"></a>
+                    <p>個人的におすすめの寿司のランキング。</p>
+                </div>
+                <div class="rinku">
+                    <h1>店舗</h1>
+                    <a href="3karamu.html"><img src="img/かっぱ寿司　盛岡南.jpg"></a>
+                    <p>盛岡市内のチェーン店の店舗情報</p>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+
+    <footer>
+        <a href="syousai.html">サイトの詳細</a>
+    </footer>
+
 </body>
 </html>
